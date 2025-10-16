@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+</head>
+<body>
+    <h1>Edit Task</h1>
+
+    <form method="POST" >
+        {% csrf_token %}
+        {{ form.non_field_errors}}
+        {% for field in form %}
+            <p>
+                {{ field.label_tag}}<br>
+                {{field}}
+                {{field.errors}}
+            </p>
+        {% endfor %}
+        <button type="submit">Update</button>
+    </form>
+
+    <a href="{% url 'task_list' %}">Back to List</a>
+</body>
+</html>
