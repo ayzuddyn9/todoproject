@@ -1,0 +1,24 @@
+# Ignore virtual environment
+venv/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Django database (you can exclude or include depending on team needs)
+db.sqlite3
+
+# Environment variables
+.env
+
+# VS Code or IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# macOS system files
+.DS_Store
