@@ -1,0 +1,84 @@
+/* Reset a few defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    margin-right: 15px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main section */
+main {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Buttons and links */
+.add-task {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.add-task:hover {
+    background-color: #2ecc71;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    opacity: 0.7;
+}
+
+/* Completed task style */
+li s {
+    color: #aaa;
+}

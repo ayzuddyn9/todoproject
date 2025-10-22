@@ -1,0 +1,22 @@
+{% extends "tasks/base.html" %}
+
+{% block title %} My Tasks{% endblock  %}
+
+{% block content %}
+<h2>Task List</h2>    
+<a href="{% url "create_task" %}">➕ Add Task</a>
+<ul>
+    {% for task in tasks %}
+        <li data-id="{{ task.id }}" class="{% if task.complete %}completed{% endif %}">
+            {{ task.title }}
+            <span class="emoji">{% if task.complete %}✅{% else %}❌{% endif %}</span>
+            <a href=" {% url "edit_task" task.id %}">✏️</a>
+            <a href=" {% url "delete_task" task.id%}">🗑️</a>
+        </li>
+    {% empty %}
+        <li>No tasks available</li>
+    {% endfor %}
+</ul>
+{% endblock  %} 
+
+
